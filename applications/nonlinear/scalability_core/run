@@ -1,0 +1,13 @@
+mpirun -n 1 python pSVN_nCore_1.py
+
+mpirun -n 2 python pSVN_nCore_2.py
+
+mpirun -n 4 python pSVN_nCore_4.py
+
+mpirun -n 8 python pSVN_nCore_8.py
+
+mpirun -n 16 python pSVN_nCore_16.py
+
+mpirun -n 32 python pSVN_nCore_32.py
+
+mpirun -n 64 python pSVN_nCore_64.py

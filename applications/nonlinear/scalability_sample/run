@@ -1,0 +1,7 @@
+mpirun -n 1 python pSVN_32.py
+
+mpirun -n 4 python pSVN_32.py
+
+mpirun -n 16 python pSVN_32.py
+
+mpirun -n 64 python pSVN_32.py

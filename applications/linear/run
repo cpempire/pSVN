@@ -1,0 +1,15 @@
+cd dimension-16
+
+./run
+
+cd ../dimension-64
+
+./run
+
+cd ../dimension-256
+
+./run
+
+cd ../dimension-1024
+
+./run

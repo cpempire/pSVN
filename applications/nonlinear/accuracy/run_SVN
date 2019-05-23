@@ -1,0 +1,29 @@
+python laplace.py
+
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  mpirun -n 4 python pSVN_nSamples_8.py
+
+  cp data/data_nSamples_32_isProjection_True_SVN.p data/data_nSamples_32_isProjection_True_SVN_$i.p
+done
+
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  mpirun -n 4 python SVN_nSamples_8.py
+
+  cp data/data_nSamples_32_isProjection_False_SVN.p data/data_nSamples_32_isProjection_False_SVN_$i.p
+done
+
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  mpirun -n 64 python pSVN_nSamples_8.py
+
+  cp data/data_nSamples_512_isProjection_True_SVN.p data/data_nSamples_512_isProjection_True_SVN_$i.p
+done
+
+for i in 1 2 3 4 5 6 7 8 9 10
+do
+  mpirun -n 64 python SVN_nSamples_8.py
+
+  cp data/data_nSamples_512_isProjection_False_SVN.p data/data_nSamples_512_isProjection_False_SVN_$i.p
+done
